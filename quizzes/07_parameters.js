@@ -9,7 +9,7 @@ function basicDefaultParam() {
     return Math.floor(n * Math.random())
   }
 }
-// log(basicDefaultParam())
+
 
 function defaultParamsAsExpressions() {
   return getCandy('twix', 'king')
@@ -31,7 +31,7 @@ function defaultParamsAsExpressions() {
     }
   }
 }
-// log(defaultParamsAsExpressions())
+
 
 function restParams() {
   const availableCities = [
@@ -54,7 +54,7 @@ function restParams() {
     })
   }
 }
-// log(restParams())
+
 
 function destructureWithDefaultParams() {
   return [
@@ -85,7 +85,7 @@ function destructureWithDefaultParams() {
   }
 }
 
-// log(destructureWithDefaultParams())
+
 
 /*
 
@@ -113,7 +113,7 @@ function basicDefaultParamSOLUTION() {
     return Math.floor(n * Math.random())
   }
 }
-// log(basicDefaultParamSOLUTION())
+
 
 function defaultParamsAsExpressionsSOLUTION() {
   return getCandy('twix', 'king')
@@ -133,7 +133,7 @@ function defaultParamsAsExpressionsSOLUTION() {
     throw new Error(`${argName} is required`)
   }
 }
-// log(defaultParamsAsExpressionsSOLUTION())
+
 
 function restParamsSOLUTION() {
   const availableCities = [
@@ -150,7 +150,7 @@ function restParamsSOLUTION() {
     })
   }
 }
-// log(restParamsSOLUTION())
+
 
 function destructureWithDefaultParamsSOLUTION() {
   return [
@@ -166,6 +166,6 @@ function destructureWithDefaultParamsSOLUTION() {
   }
 }
 
-// log(destructureWithDefaultParamsSOLUTION())
+
 
 /* eslint prefer-rest-params:0 */

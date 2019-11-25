@@ -13,4 +13,4 @@ function weakMapInfo() {
     entries: weakMap.entries,
   }
 }
-// console.log(weakMapInfo())
+

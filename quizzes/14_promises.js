@@ -1,5 +1,5 @@
-// callbacks()
-// promises()
+
+
 
 function callbacks() {
   // refactor to promises

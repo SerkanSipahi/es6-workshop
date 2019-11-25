@@ -1,4 +1,4 @@
-// this is the object we'll be mucking around with and proxying
+
 function getCharacter() {
   return {
     _id: '9RKDLS02580GHCXNZLA0',
@@ -77,7 +77,7 @@ test('handler can intercept gets, sets, and deletes', () => {
   expect(proxy.awesome).toBe(undefined) // property successfully deleted
 })
 
-//////// EXTRA CREDIT ////////
+
 
 test.skip('can intercept function calls', () => {
   const character = getCharacter()
@@ -144,12 +144,12 @@ test.skip('can be used to do some fancy stuff with arrays', () => {
   expect(proxy[-4]).toBe('Nevel Longbottom')
 })
 
-//////// Elaboration & Feedback /////////
-// WORKSHOP_START
+
+
 /*
 http://ws.kcd.im/?ws=ES6+and+Beyond&e=Proxies&em=
 */
-// WORKSHOP_END
+
 test('I submitted my elaboration and feedback', () => {
   // WORKSHOP_START
   const submitted = false // change this when you've submitted!
@@ -159,10 +159,10 @@ test('I submitted my elaboration and feedback', () => {
   // FINAL_END
   expect(true).toBe(submitted)
 })
-////////////////////////////////
 
-//////// EXTRA CREDIT ////////
 
-// If you get this far, try adding a few more tests,
-// then file a pull request to add them to the extra credit!
-// Learn more here: http://kcd.im/es6-workshop-contributing
+
+
+
+
+

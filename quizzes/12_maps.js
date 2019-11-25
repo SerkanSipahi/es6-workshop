@@ -5,7 +5,7 @@ function basicMap() {
   // TODO: key is a noop function, value is 8
   return map
 }
-// console.log(basicMap())
+
 
 function initializeMap() {
   // how could we create the same kind
@@ -14,7 +14,7 @@ function initializeMap() {
   const map = new Map()
   return map
 }
-// console.log(initializeMap())
+
 
 function uniquePair() {
   // what will this return?
@@ -25,7 +25,7 @@ function uniquePair() {
   map.set(obj, {reallyGood: true})
   return map
 }
-// console.log(uniquePair())
+
 
 function mapInfo() {
   const objKey = {awesome: true}
@@ -41,7 +41,7 @@ function mapInfo() {
     entries: Object.keys(map).map(key => [key, map[key]]),
   }
 }
-// console.log(mapInfo())
+
 
 function removingItems() {
   const objKey = {awesome: true}
@@ -53,7 +53,7 @@ function removingItems() {
   const afterClearSize = map.size
   return {firstSize, afterDeleteSize, afterClearSize}
 }
-// console.log(removingItems())
+
 
 function iterateMaps() {
   const map = new Map([
@@ -66,7 +66,7 @@ function iterateMaps() {
     console.log(key, value)
   }
 }
-// iterateMaps()
+
 
 function spreadMaps() {
   // what does this return?
@@ -79,7 +79,7 @@ function spreadMaps() {
   const array = [...map]
   return array
 }
-// console.log(spreadMaps())
+
 
 function restMap() {
   // what does this return?
@@ -92,10 +92,10 @@ function restMap() {
   const [first, second, ...rest] = map
   return rest
 }
-// console.log(restMap())
 
-// SOLUTION BELOW
-// No peeking!
+
+
+
 
 function basicMapSOLUTION() {
   const map = new Map()
@@ -104,13 +104,13 @@ function basicMapSOLUTION() {
   map.set(() => {}, 8)
   return map
 }
-// console.log(basicMapSOLUTION())
+
 
 function initializeMapSOLUTION() {
   const map = new Map([['a', 3], [{v: 5, j: 7}, 7], [() => {}, 8]])
   return map
 }
-// console.log(initializeMapSOLUTION())
+
 
 function mapInfoSOLUTION() {
   const objKey = {awesome: true}
@@ -125,4 +125,4 @@ function mapInfoSOLUTION() {
     entries: map.entries(),
   }
 }
-// console.log(mapInfoSOLUTION())
+

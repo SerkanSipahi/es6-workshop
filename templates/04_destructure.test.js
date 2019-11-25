@@ -110,14 +110,14 @@ test('can reach nested arrays', () => {
   expect(six).toBe(6)
 })
 
-// MORE AT http://www.2ality.com/2015/01/es6-destructuring.html
 
-//////// Elaboration & Feedback /////////
-// WORKSHOP_START
+
+
+
 /*
 http://ws.kcd.im/?ws=ES6+and+Beyond&e=Destructuring&em=
 */
-// WORKSHOP_END
+
 test('I submitted my elaboration and feedback', () => {
   // WORKSHOP_START
   const submitted = false // change this when you've submitted!
@@ -127,10 +127,10 @@ test('I submitted my elaboration and feedback', () => {
   // FINAL_END
   expect(true).toBe(submitted)
 })
-////////////////////////////////
 
-//////// EXTRA CREDIT ////////
 
-// If you get this far, try adding a few more tests,
-// then file a pull request to add them to the extra credit!
-// Learn more here: http://kcd.im/es6-workshop-contributing
+
+
+
+
+

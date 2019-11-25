@@ -5,7 +5,7 @@ function getAverage() {
   const obj = {x: 3.6, y: 7.8, z: 4.3}
   return Math.floor((obj.x + obj.y + obj.z) / 3.0)
 }
-// log(getAverage())
+
 
 function getAvgTemp() {
   // refactor with nested destructuring
@@ -27,7 +27,7 @@ function getAvgTemp() {
     unit: weather.unit,
   }
 }
-// log(getAvgTemp())
+
 
 function getFirstTwo() {
   // refactor with array destructuring
@@ -40,7 +40,7 @@ function getFirstTwo() {
     secondItem: secondItem,
   }
 }
-// log(getFirstTwo())
+
 
 function getElements() {
   // returns 1st, 2nd and last element from an array
@@ -56,7 +56,7 @@ function getElements() {
     fifth: fifth,
   }
 }
-// log(getElements())
+
 
 function getSecondItem() {
   // refactor with nested destructuring of arrays
@@ -75,7 +75,7 @@ function getSecondItem() {
     third: thirdItem,
   }
 }
-// log(getSecondItem())
+
 
 function nestedArrayAndObject() {
   // refactor this to a single line of destructuring...
@@ -98,7 +98,7 @@ function nestedArrayAndObject() {
   const enemyName = enemy.name
   return `${enemyName} (${enemyTitle}) is an enemy to ${protagonistName} in "${title}"`
 }
-// log(nestedArrayAndObject())
+
 
 function defaultValues() {
   const bench = {type: 'Piano', adjustable: false}
@@ -109,7 +109,7 @@ function defaultValues() {
     return 4
   }
 }
-// log(defaultValues())
+
 
 function ontoAnObject() {
   // refactor this to destructuring
@@ -121,7 +121,7 @@ function ontoAnObject() {
   object.rest = array.slice(3)
   return object
 }
-// log(ontoAnObject())
+
 
 /*
 
@@ -148,7 +148,7 @@ function getAverageSOLUTION() {
   const {x, y, z} = obj
   return Math.floor((x + y + z) / 3.0)
 }
-// log(getAverageSOLUTION())
+
 
 function getAvgTempSOLUTION() {
   const weather = {
@@ -169,7 +169,7 @@ function getAvgTempSOLUTION() {
     unit: unit,
   }
 }
-// log(getAvgTempSOLUTION())
+
 
 function getFirstTwoSOLUTION() {
   const arr = [0, 1, 2, 3, 4, 5, 6, 7]
@@ -180,7 +180,7 @@ function getFirstTwoSOLUTION() {
     second: second,
   }
 }
-// log(getFirstTwoSOLUTION())
+
 
 function getElementsSOLUTION() {
   const arr = [0, 1, 2, 3, 4, 5, 6, 7]
@@ -192,7 +192,7 @@ function getElementsSOLUTION() {
     fifth: fifth,
   }
 }
-// log(getElementsSOLUTION())
+
 
 function getSecondItemSOLUTION() {
   const food = [
@@ -208,7 +208,7 @@ function getSecondItemSOLUTION() {
     third: thirdItem,
   }
 }
-// log(getSecondItemSOLUTION())
+
 
 function nestedArrayAndObjectSOLUTION() {
   const info = {
@@ -232,7 +232,7 @@ function nestedArrayAndObjectSOLUTION() {
   } = info
   return `${enemyName} (${enemyTitle}) is an enemy to ${protagonistName} in "${title}"`
 }
-// log(nestedArrayAndObjectSOLUTION())
+
 
 function defaultValuesSOLUTION() {
   const bench = {type: 'Piano', adjustable: false}
@@ -243,7 +243,7 @@ function defaultValuesSOLUTION() {
     return 4
   }
 }
-// log(defaultValuesSOLUTION())
+
 
 function ontoAnObjectSOLUTION() {
   const array = [1, 2, 3, 4, 5, 6]
@@ -251,6 +251,6 @@ function ontoAnObjectSOLUTION() {
   ;[object.one, object.two, object.three, ...object.rest] = array
   return object
 }
-// log(ontoAnObjectSOLUTION())
+
 
 /* eslint object-shorthand:0 */

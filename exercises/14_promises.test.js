@@ -1,6 +1,6 @@
-// For each then() or catch() block, pick whether it should run or not
-// If it should run, tell which value it will receive in `result` or `error`
-// If it should not run, uncomment the error throwing statement
+
+
+
 test(`should resolve`, () => {
   return pickApple('ripe')
     .then(
@@ -74,7 +74,7 @@ function pickApple(ripeness) {
   })
 }
 
-//////// Elaboration & Feedback /////////
+
 /*
 http://ws.kcd.im/?ws=ES6+and+Beyond&e=Promises&em=
 */
@@ -82,10 +82,10 @@ test('I submitted my elaboration and feedback', () => {
   const submitted = false // change this when you've submitted!
   expect(true).toBe(submitted)
 })
-////////////////////////////////
 
-//////// EXTRA CREDIT ////////
 
-// If you get this far, try adding a few more tests,
-// then file a pull request to add them to the extra credit!
-// Learn more here: http://kcd.im/es6-workshop-contributing
+
+
+
+
+

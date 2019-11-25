@@ -89,14 +89,14 @@ test('can create a custom iterator with a generator', () => {
   }
 })
 
-//////// Elaboration & Feedback /////////
+
 test('I submitted my elaboration and feedback', () => {
   const submitted = true
   expect(true).toBe(submitted)
 })
-////////////////////////////////
 
-//////// EXTRA CREDIT ////////
+
+
 
 test.skip('add custom iterator to built-in types', () => {
   // got this trick from getify's "ES6, the best parts"
@@ -112,6 +112,6 @@ test.skip('add custom iterator to built-in types', () => {
   expect(result).toEqual([0, 1, 2, 3, 4])
 })
 
-// If you get this far, try adding a few more tests,
-// then file a pull request to add them to the extra credit!
-// Learn more here: http://kcd.im/es6-workshop-contributing
+
+
+

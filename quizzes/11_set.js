@@ -6,7 +6,7 @@ function basicSet() {
   set.add(1)
   return set
 }
-// console.log(basicSet())
+
 
 function unique() {
   // What do you think this will return?
@@ -16,7 +16,7 @@ function unique() {
   s.add({a: 45, b: 50})
   return s
 }
-// console.log(unique())
+
 
 function initializeSet() {
   const arr = [1, 5, 7, 2, 9, 4]
@@ -25,7 +25,7 @@ function initializeSet() {
   const set = new Set()
   return set
 }
-// console.log(initializeSet())
+
 
 function setInfo() {
   const obj = {a: 42}
@@ -40,7 +40,7 @@ function setInfo() {
     thirdItem: set[2],
   }
 }
-// log(setInfo())
+
 
 function removeDuplicates() {
   // given an array
@@ -53,7 +53,7 @@ function removeDuplicates() {
 
   return uniqueArr
 }
-// console.log(removeDuplicates())
+
 
 function iterateSets() {
   const set = new Set([1, 2, 3, 4])
@@ -61,7 +61,7 @@ function iterateSets() {
     console.log(item)
   }
 }
-// iterateSets()
+
 
 function spreadSets() {
   // what does this return?
@@ -69,7 +69,7 @@ function spreadSets() {
   const array = [...set]
   return array
 }
-// console.log(spreadSets())
+
 
 function restSet() {
   // what does this return?
@@ -77,17 +77,17 @@ function restSet() {
   const [first, second, ...rest] = set
   return rest
 }
-// console.log(restSet())
 
-// SOLUTION BELOW
-// No peeking!
+
+
+
 
 function initializeSetSOLUTION() {
   const arr = [1, 5, 7, 2, 9, 4]
   const t = new Set(arr)
   return t
 }
-// console.log(initializeSetSOLUTION())
+
 
 function setInfoSOLUTION() {
   const obj = {a: 42}
@@ -100,7 +100,7 @@ function setInfoSOLUTION() {
     thirdItem,
   }
 }
-// log(setInfoSOLUTION())
+
 
 function removeDuplicatesSOLUTION() {
   // given an array
@@ -113,4 +113,4 @@ function removeDuplicatesSOLUTION() {
   const uniqueArr = Array.from(set)
   return uniqueArr
 }
-// console.log(removeDuplicatesSOLUTION())
+

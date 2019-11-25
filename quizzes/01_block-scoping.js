@@ -6,7 +6,7 @@ function basic() {
   const y = 200
   return {x: x, y: y}
 }
-// log(basic())
+
 
 function immutable() {
   // what is returned?
@@ -17,7 +17,7 @@ function immutable() {
   array.splice(1, 1)
   return {object: object, array: array}
 }
-// log(immutable())
+
 
 function immutableReference() {
   // what is returned?
@@ -25,7 +25,7 @@ function immutableReference() {
   // object = {a: 'q'}
   return object
 }
-// log(immutableReference())
+
 
 function ifBlock() {
   // what is returned?
@@ -35,7 +35,7 @@ function ifBlock() {
   }
   return {x: x, y: y}
 }
-// log(ifBlock())
+
 
 function block() {
   // what is returned?
@@ -46,7 +46,7 @@ function block() {
   }
   return {x: x, y: y}
 }
-// log(block())
+
 
 function scoped() {
   // what is returned?
@@ -56,7 +56,7 @@ function scoped() {
   }
   return x
 }
-// log(scoped())
+
 
 function veryScoped() {
   // what is returned?
@@ -70,7 +70,7 @@ function veryScoped() {
   }
   return x
 }
-// log(veryScoped())
+
 
 function temporalDeadZone() {
   console.log(myVar)
@@ -82,7 +82,7 @@ function temporalDeadZone() {
   const myConst = 'const'
   return {myVar: myVar, myLet: myLet, myConst: myConst}
 }
-// log(temporalDeadZone())
+
 
 function semiPractical() {
   // what is returned from this function?
@@ -95,7 +95,7 @@ function semiPractical() {
   }
   return callbacks.map(callback => callback())
 }
-// log(semiPractical())
+
 
 /*
 
@@ -123,7 +123,7 @@ function immutableReferenceSOLUTION() {
   object = {a: 'q'}
   return object
 }
-// log(immutableReferenceSOLUTION())
+
 
 function semiPracticalSOLUTION() {
   const myThings = ['thing1', 'thing2', 'red fish', 'blue fish']
@@ -135,7 +135,7 @@ function semiPracticalSOLUTION() {
   }
   return callbacks.map(callback => callback())
 }
-// log(semiPracticalSOLUTION())
+
 
 /*
   eslint

@@ -1,11 +1,11 @@
-// COMMENT_START eslint trickery :)
+
 /* eslint no-unreachable:0 */
-// COMMENT_END
-// WORKSHOP_START
-// For each then() or catch() block, pick whether it should run or not
-// If it should run, tell which value it will receive in `result` or `error`
-// If it should not run, uncomment the error throwing statement
-// WORKSHOP_END
+
+
+
+
+
+
 test(`should resolve`, () => {
   return pickApple('ripe')
     .then(
@@ -119,12 +119,12 @@ function pickApple(ripeness) {
   })
 }
 
-//////// Elaboration & Feedback /////////
-// WORKSHOP_START
+
+
 /*
 http://ws.kcd.im/?ws=ES6+and+Beyond&e=Promises&em=
 */
-// WORKSHOP_END
+
 test('I submitted my elaboration and feedback', () => {
   // WORKSHOP_START
   const submitted = false // change this when you've submitted!
@@ -134,10 +134,10 @@ test('I submitted my elaboration and feedback', () => {
   // FINAL_END
   expect(true).toBe(submitted)
 })
-////////////////////////////////
 
-//////// EXTRA CREDIT ////////
 
-// If you get this far, try adding a few more tests,
-// then file a pull request to add them to the extra credit!
-// Learn more here: http://kcd.im/es6-workshop-contributing
+
+
+
+
+

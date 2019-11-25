@@ -29,9 +29,9 @@ function basicExample() {
     weatherQuestion: interestingCallbacks.askAboutWeather(),
   }
 }
-// log(basicExample())
 
-// SOLUTIONS BELOW!
+
+
 
 function basicExampleSOLUTION() {
   class Greeter {

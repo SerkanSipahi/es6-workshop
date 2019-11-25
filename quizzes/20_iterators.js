@@ -12,7 +12,7 @@ function gettingAnIterator() {
   const fifth = iterator.next()
   return {first, second, third, fourth, fifth}
 }
-// log(gettingAnIterator())
+
 
 function builtInIterables() {
   // what does this return?
@@ -37,7 +37,7 @@ function builtInIterables() {
     return Boolean(thing[Symbol.iterator])
   }
 }
-// log(builtInIterables())
+
 
 function canRestAndSpreadIterables() {
   const string = '1hey'
@@ -46,7 +46,7 @@ function canRestAndSpreadIterables() {
   const [, ...rest] = combinedSet
   return rest
 }
-// log(canRestAndSpreadIterables())
+
 
 function customIterator() {
   const cars = {
@@ -61,7 +61,7 @@ function customIterator() {
   }
   return [...cars]
 }
-// log(customIterator())
+
 
 function customIteratorWithGenerator() {
   const cars = {
@@ -88,7 +88,7 @@ function customIteratorWithGenerator() {
   }
   return [...cars]
 }
-// log(customIteratorWithGenerator())
+
 
 function customIteratorWithArguments() {
   const cars = {
@@ -113,9 +113,9 @@ function customIteratorWithArguments() {
   // goal: only get the items that include the letter `e`
   return [...cars]
 }
-// log(customIteratorWithArguments())
 
-// SOLUTIONS BELOW!
+
+
 
 function customIteratorSOLUTION() {
   const cars = {
@@ -142,7 +142,7 @@ function customIteratorSOLUTION() {
   }
   return [...cars]
 }
-// log(customIteratorSOLUTION())
+
 
 function customIteratorWithGeneratorSOLUTION() {
   const cars = {
@@ -164,7 +164,7 @@ function customIteratorWithGeneratorSOLUTION() {
   }
   return [...cars]
 }
-// log(customIteratorWithGeneratorSOLUTION())
+
 
 function customIteratorWithArgumentsSOLUTION() {
   const cars = {
@@ -188,4 +188,4 @@ function customIteratorWithArgumentsSOLUTION() {
   }
   return [...cars[Symbol.iterator]('e')]
 }
-// log(customIteratorWithArgumentsSOLUTION())
+

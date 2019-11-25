@@ -4,7 +4,7 @@ function createSymbol() {
   const mySymbol = new Symbol()
   return mySymbol
 }
-// log(createSymbol())
+
 
 function symbolDescription() {
   // how would we give this symbol an identifier
@@ -12,7 +12,7 @@ function symbolDescription() {
   const mySymbol = Symbol()
   return mySymbol
 }
-// log(symbolDescription())
+
 
 function getSymbolsFromObject() {
   // what will this return?
@@ -23,18 +23,18 @@ function getSymbolsFromObject() {
   }
   return Object.keys(object)
 }
-// log(getSymbolsFromObject())
 
-// More about Symbols:
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol
 
-// SOLUTIONS BELOW!
+
+
+
+
 
 function createSymbolSOLUTION() {
   const mySymbol = Symbol()
   return mySymbol
 }
-// log(createSymbolSOLUTION())
+
 
 function symbolDescriptionSOLUTION() {
   // how would we give this symbol an identifier
@@ -42,7 +42,7 @@ function symbolDescriptionSOLUTION() {
   const mySymbol = Symbol('My description')
   return mySymbol
 }
-// log(symbolDescriptionSOLUTION())
+
 
 function getSymbolsFromObjectSOLUTION() {
   // what will this return?
@@ -53,7 +53,7 @@ function getSymbolsFromObjectSOLUTION() {
   }
   return Object.getOwnPropertySymbols(object)
 }
-// log(getSymbolsFromObjectSOLUTION())
+
 
 /*
 eslint

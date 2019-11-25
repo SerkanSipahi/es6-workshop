@@ -78,7 +78,7 @@ test('can create a custom iterator with a generator', () => {
   }
 })
 
-//////// Elaboration & Feedback /////////
+
 /*
 http://ws.kcd.im/?ws=ES6+and+Beyond&e=Iterators&em=
 */
@@ -86,9 +86,9 @@ test('I submitted my elaboration and feedback', () => {
   const submitted = false // change this when you've submitted!
   expect(true).toBe(submitted)
 })
-////////////////////////////////
 
-//////// EXTRA CREDIT ////////
+
+
 
 test.skip('add custom iterator to built-in types', () => {
   // How could you make this work using a custom iterator?
@@ -97,6 +97,6 @@ test.skip('add custom iterator to built-in types', () => {
   expect(result).toEqual([0, 1, 2, 3, 4])
 })
 
-// If you get this far, try adding a few more tests,
-// then file a pull request to add them to the extra credit!
-// Learn more here: http://kcd.im/es6-workshop-contributing
+
+
+

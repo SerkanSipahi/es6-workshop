@@ -6,7 +6,7 @@ function spreadFunctionCall() {
   const arr = [5, 6, 8, 4, 9]
   return Math.max.apply(null, arr)
 }
-// log(spreadFunctionCall())
+
 
 function concatArrays() {
   // TODO: flatten nested arrays of arbitrary levels of nesting
@@ -25,7 +25,7 @@ function concatArrays() {
     }, [])
   }
 }
-// log(concatArrays())
+
 
 function mergeObjects() {
   // refactor to object spread
@@ -48,7 +48,7 @@ function mergeObjects() {
   }
   return Object.assign({}, obj1, obj2)
 }
-// log(mergeObjects())
+
 
 function spreadString() {
   return join('--', 'PayPal')
@@ -57,7 +57,7 @@ function spreadString() {
     return [...string].join(delimiter)
   }
 }
-// log(spreadString())
+
 
 function restString() {
   // what does this return?
@@ -65,16 +65,16 @@ function restString() {
   const [h, e, l, l2, o, space, ...splitGreeting] = greeting
   return splitGreeting
 }
-// log(restString())
 
-// SOLUTIONS ARE GIVEN BELOW
-// No peeking!
+
+
+
 
 function spreadFunctionCallSOLUTION() {
   const arr = [5, 6, 8, 4, 9]
   return Math.max(...arr)
 }
-// log(spreadFunctionCallSOLUTION())
+
 
 function concatArraysSOLUTION() {
   const arr = [8, 9, [6, [5, [7], [45, 34, [[[2]]], [[[[[[[[7]]]]], 90]]]]]]]
@@ -86,7 +86,7 @@ function concatArraysSOLUTION() {
     }, [])
   }
 }
-// log(concatArraysSOLUTION())
+
 
 function mergeObjectsSOLUTION() {
   const obj1 = {
@@ -111,4 +111,4 @@ function mergeObjectsSOLUTION() {
     ...obj2,
   }
 }
-// log(mergeObjectsSOLUTION())
+

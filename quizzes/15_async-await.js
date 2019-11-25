@@ -1,5 +1,5 @@
-// promises()
-// asyncAwaits()
+
+
 
 function log(...args) {
   console.log(...args)
@@ -9,7 +9,7 @@ function logError(...args) {
   console.error(...args)
 }
 
-// Define and use promise style asynchronous operations
+
 function promises() {
   // TODO: Rewrite as async
   const successfulPromise = timeout(100).then(result => `success: ${result}`)
@@ -28,7 +28,7 @@ function promises() {
   recoveredPromise.then(log, logError)
 }
 
-// This is the mothership of all things asynchronous
+
 function timeout(duration = 0, shouldReject = false) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -41,7 +41,7 @@ function timeout(duration = 0, shouldReject = false) {
   })
 }
 
-// SOLUTIONS BELOW!
+
 
 function asyncAwaits() {
   async function successfulAsyncAwait() {

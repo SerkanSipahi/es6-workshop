@@ -55,7 +55,7 @@ test('means that we can start using block statements', () => {
   expect(() => noop('d', d)).toThrow('d is not defined')
 })
 
-//////// Elaboration & Feedback /////////
+
 /*
 http://ws.kcd.im/?ws=ES6+and+Beyond&e=Block+Scoping&em=
 */
@@ -63,9 +63,9 @@ test('I submitted my elaboration and feedback', () => {
   const submitted = false // change this when you've submitted!
   expect(true).toBe(submitted)
 })
-////////////////////////////////
 
-//////// EXTRA CREDIT ////////
+
+
 
 test.skip('means that we can declare constant with the same name in block statement', () => {
   // Declare a 'd' using 'const', setting the value to 5
@@ -77,8 +77,8 @@ test.skip('means that we can declare constant with the same name in block statem
   expect(d).toBe(5)
 })
 
-// If you get this far, try adding a few more tests,
-// then file a pull request to add them to the extra credit!
-// Learn more here: http://kcd.im/es6-workshop-contributing
+
+
+
 
 /* eslint no-constant-condition:0 */

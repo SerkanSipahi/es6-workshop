@@ -18,7 +18,9 @@
     "type": "git",
     "url": "git://github.com/kentcdodds/es6-workshop.git"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@types/jest": "^24.0.23"
+  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "chalk": "^2.3.2",
@@ -37,7 +39,6 @@
     "add-contributor": "kcd-scripts contributors add",
     "start": "npm run test:watch",
     "lint": "kcd-scripts lint",
-    "precommit": "kcd-scripts precommit && npm run generate && kcd-scripts format && npm run validate && git add exercises exercises-final",
     "quiz": "babel-node quizzes/run.js",
     "test": "kcd-scripts test --config exercises/jest.config.js",
     "test:final": "kcd-scripts test --config exercises-final/jest.config.js",

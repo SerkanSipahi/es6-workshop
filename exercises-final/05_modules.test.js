@@ -21,14 +21,14 @@ test('can import from my node_modules', () => {
   expect(_).toBeDefined()
 })
 
-//////// Elaboration & Feedback /////////
+
 test('I submitted my elaboration and feedback', () => {
   const submitted = true
   expect(true).toBe(submitted)
 })
-////////////////////////////////
 
-//////// EXTRA CREDIT ////////
+
+
 test.skip('Index import', () => {
   //I have noticed that using index.js is pretty common pattern
   //If someone has been confused about that maybe this helps
@@ -37,6 +37,6 @@ test.skip('Index import', () => {
   expect(IndexImport.variable3).toBe(222)
   expect(IndexImport.variable4).toBe(false)
 })
-// If you get this far, try adding a few more tests,
-// then file a pull request to add them to the extra credit!
-// Learn more here: http://kcd.im/es6-workshop-contributing
+
+
+

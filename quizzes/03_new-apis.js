@@ -5,7 +5,7 @@ function stringIncludes() {
   const phrase = 'in the box'
   return phrase.indexOf('the') !== -1
 }
-// log(stringIncludes())
+
 
 function stringRepeat() {
   // refactor to String.repeat
@@ -16,14 +16,14 @@ function stringRepeat() {
   }
   return marker
 }
-// log(stringRepeat())
+
 
 function arrayFrom() {
   // refactor to Array.from
   const arrayLike = {length: 2, 0: 'hello', 1: 'world'}
   return Array.prototype.slice.apply(arrayLike)
 }
-// log(arrayFrom())
+
 
 function arrayFill() {
   // refactor to Array.fill
@@ -38,7 +38,7 @@ function arrayFill() {
   }
   return array
 }
-// log(arrayFill())
+
 
 function objectAssign() {
   // what will this return?
@@ -56,7 +56,7 @@ function objectAssign() {
   Object.assign(target, object1, object2, object3)
   return target
 }
-// log(objectAssign())
+
 
 /*
 
@@ -83,21 +83,21 @@ function stringIncludesSOLUTION() {
   const phrase = 'in the box'
   return phrase.includes('the')
 }
-// log(stringIncludesSOLUTION())
+
 
 function stringRepeatSOLUTION() {
   // refactor to String.repeat
   const repeatCount = 20
   return '*'.repeat(repeatCount)
 }
-// log(stringRepeatSOLUTION())
+
 
 function arrayFromSOLUTION() {
   // refactor to Array.from
   const arrayLike = {length: 2, 0: 'hello', 1: 'world'}
   return Array.from(arrayLike)
 }
-// log(arrayFromSOLUTION())
+
 
 function arrayFillSOLUTION() {
   // refactor to Array.fill
@@ -107,4 +107,4 @@ function arrayFillSOLUTION() {
   const array = new Array(7)
   return array.fill(value, start, end)
 }
-// log(arrayFillSOLUTION())
+
