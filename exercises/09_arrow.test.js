@@ -1,17 +1,17 @@
 test('can replace traditional functions', () => {
   let fnMultiply, arrowMultiply
 
-  // Write two functions that take two params and return their product
-  // For 'fnMultiply', set it equal to a regular function
-  // For 'arrowMultiply', set it equal to an arrow function
+  
+  
+  
 
   expect(fnMultiply(5, 5)).toBe(arrowMultiply(5, 5))
 })
 
 test('can replace traditional functions #2', () => {
   const nums = [2, 5, 10]
-  // Replace the 'function' in this 'map' call with an arrow function.
-  // Hint: you shouldn't have any braces or 'return' after you are done
+  
+  
   const squares = nums.map(function(num) {
     return num * num
   })
@@ -22,8 +22,8 @@ test('can replace traditional functions #2', () => {
 })
 
 test('binds `this` to the eval scope, not the runtime scope', () => {
-  // Change the person object. One of the functions should become an arrow to
-  // allow for 'this' to retain context correctly
+  
+  
   const person = {
     name: 'Aaron',
     greetFriends: function(friends) {
@@ -50,20 +50,20 @@ test('can make array filter chains more managable', () => {
     {type: 'CD', name: 'JT Best Hits', price: 2.25, qty: 6},
   ]
 
-  // REPLACE ALL REGULAR FUNCTIONS WITH ARROW FUNCTIONS
+  
   const shoppingList = data
     .filter(function(d) {
       return d.type != 'Widget'
-    }) // Remove Widgets
+    }) 
     .filter(function(d) {
       return d.price < 5
-    }) // Find only remaining items with price < 5
+    }) 
     .sort(function(a, b) {
       return a.qty - b.qty
-    }) // Sort by quantity, desc
+    }) 
     .map(function(d) {
       return d.name
-    }) // Pull just the name from each item
+    }) 
 
   expect(shoppingList.shift()).toBe('Bacon')
   expect(shoppingList.shift()).toBe('JT Best Hits')
@@ -71,10 +71,10 @@ test('can make array filter chains more managable', () => {
 
 
 /*
-http://ws.kcd.im/?ws=ES6+and+Beyond&e=Arrow+Functions&em=
+http:
 */
 test('I submitted my elaboration and feedback', () => {
-  const submitted = false // change this when you've submitted!
+  const submitted = false 
   expect(true).toBe(submitted)
 })
 

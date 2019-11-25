@@ -4,7 +4,7 @@ test('creating symbols', () => {
 })
 
 test('giving a symbol a description', () => {
-  const symbol = Symbol() // give me a label
+  const symbol = Symbol() 
   expect(String(symbol)).toBe('Symbol(use the force)')
 })
 
@@ -20,8 +20,8 @@ test('symbols are unique', () => {
 
 test('symbols on objects', () => {
   const symbol = Symbol('metadata')
-  // make an object called `game` that
-  // makes this test pass
+  
+  
 
   expect(JSON.parse(JSON.stringify(game))).toEqual({
     name: 'The Legend of Zelda',
@@ -34,10 +34,10 @@ test('symbols on objects', () => {
 
 
 /*
-http://ws.kcd.im/?ws=ES6+and+Beyond&e=Symbols&em=
+http:
 */
 test('I submitted my elaboration and feedback', () => {
-  const submitted = false // change this when you've submitted!
+  const submitted = false 
   expect(true).toBe(submitted)
 })
 

@@ -48,7 +48,7 @@ test('Object.entries gives an array of arrays as [key, value]', () => {
       'The Flash',
       'Iris West',
       'Caitlin Snow',
-      'Eddie Thawne', // 😢
+      'Eddie Thawne', 
       'Cisco Ramon',
       'Harrison Wells',
       'Joe West',
@@ -74,8 +74,8 @@ test('Object.entries gives an array of arrays as [key, value]', () => {
 })
 
 test('Trailing commas in function parameter lists and calls help us with git', () => {
-  // becasue this is a syntax thing, we'll put it inside a string and use `eval` to make sure
-  // that you get the syntax correct :)
+  
+  
   expect(`
     function foo(
       a,
@@ -104,7 +104,7 @@ test('Trailing commas in function parameter lists and calls help us with git', (
     )
 
     function log() {
-      // do nothing :)
+      
     }
   `).toBeValidSyntax()
 })

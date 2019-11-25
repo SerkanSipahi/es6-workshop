@@ -30,14 +30,14 @@ is not, it will be generated when you commit.
 
 ## Where to contribute
 
-This project uses [`split-guide`](https://github.com/kentcdodds/split-guide) to
+This project uses [`split-guide`](https:
 make maintaining the `exercises` and `exercises-final` files easier. The
 `exercises` and `exercise-final` folders are actually generated code via the
 `generate` script. So any changes you make should go in a `templates` directory.
 When you've made your changes, please run `npm run generate` to regenerate the
 exercises and commit those changes as part of your pull request.
 
-> Learn more about `split-guide` and contributing to this project with [this video](https://youtu.be/CSVOPw_5OT0)
+> Learn more about `split-guide` and contributing to this project with [this video](https:
 
 ### Development
 
@@ -60,12 +60,12 @@ contributing. Thanks for your help!
 ### Quizzes
 
 There are a bunch of quizzes in the quizzes folder. It'd be awesome to get more
-of these! I recorded [a video](https://youtu.be/LlNGtPFK9OM) showing how it
+of these! I recorded [a video](https:
 works. Pretty much just open the `quizzes` directory and follow the current
 conventions there! For development, just run `npm run quiz` and start
 developing and seeing the output!
 
-[egghead]: https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github
-[all-contributors]: https://github.com/kentcdodds/all-contributors
-[onchange]: https://npmjs.com/package/onchange
-[jest-watch]: https://egghead.io/lessons/javascript-use-jest-s-interactive-watch-mode?pl=testing-javascript-with-jest-a36c4074
+[egghead]: https:
+[all-contributors]: https:
+[onchange]: https:
+[jest-watch]: https:

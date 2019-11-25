@@ -11,10 +11,10 @@ function logError(...args) {
 
 
 function promises() {
-  // TODO: Rewrite as async
+  
   const successfulPromise = timeout(100).then(result => `success: ${result}`)
 
-  // TODO: Rewrite as async
+  
   const failingPromise = timeout(200, true).then(null, error =>
     Promise.reject(`failure: ${error}`),
   )
@@ -58,7 +58,7 @@ function asyncAwaits() {
     let result
     try {
       result = await timeout(300, true)
-      return `failed: ${result}` // this would not be executed
+      return `failed: ${result}` 
     } catch (error) {
       return `failed and recovered: ${error}`
     }

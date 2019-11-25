@@ -1,16 +1,16 @@
 test('has a constructor for initialization', () => {
-  // FINAL_START
+  
   class Animal {
     constructor(name) {
       this.name = name
     }
   }
-  // FINAL_END
-  // WORKSHOP_START
-  // Create an Animal class
-  // Add a constructor that takes one param, the name.
-  // Set this.name to the name passed in
-  // WORKSHOP_END
+  
+  
+  
+  
+  
+  
 
   const animal = new Animal()
   const dog = new Animal('Dog')
@@ -20,17 +20,17 @@ test('has a constructor for initialization', () => {
 })
 
 test('constructor can have default param values', () => {
-  // FINAL_START
+  
   class Animal {
     constructor(name = 'Honey Badger') {
       this.name = name
     }
   }
-  // FINAL_END
-  // WORKSHOP_START
-  // Create an Animal class with a constructor
-  // Make your class default (using default params) the name to 'Honey Badger'
-  // WORKSHOP_END
+  
+  
+  
+  
+  
 
   const animal = new Animal()
   const dog = new Animal('Dog')
@@ -40,7 +40,7 @@ test('constructor can have default param values', () => {
 })
 
 test('can have instance methods', () => {
-  // FINAL_START
+  
   class Animal {
     constructor(name = 'Honey Badger') {
       this.name = name
@@ -50,10 +50,10 @@ test('can have instance methods', () => {
       return `My name is: ${this.name}`
     }
   }
-  // FINAL_END
-  // WORKSHOP_START
-  // Create an Animal class, pass in the name to the constructor, and add a sayName function to the class definition
-  // WORKSHOP_END
+  
+  
+  
+  
 
   const animal = new Animal()
 
@@ -63,7 +63,7 @@ test('can have instance methods', () => {
 })
 
 test('can have static methods', () => {
-  // FINAL_START
+  
   class Animal {
     constructor(name = 'Honey Badger') {
       this.name = name
@@ -77,11 +77,11 @@ test('can have static methods', () => {
       return new Animal(name)
     }
   }
-  // FINAL_END
-  // WORKSHOP_START
-  // Create an Animal class, pass in the name to the constructor,
-  // and add a create method that takes a name and returns an instance
-  // WORKSHOP_END
+  
+  
+  
+  
+  
 
   const animal = new Animal()
 
@@ -90,7 +90,7 @@ test('can have static methods', () => {
 })
 
 test('can extend another class', () => {
-  // FINAL_START
+  
   class Animal {
     constructor(name = 'Honey Badger') {
       this.name = name
@@ -102,12 +102,12 @@ test('can extend another class', () => {
       return `My name is: ${this.name}`
     }
   }
-  // FINAL_END
-  // WORKSHOP_START
-  // Create an Animal class
-  // Create a Dog class that extends Animal
-  // Add sayName to Dog
-  // WORKSHOP_END
+  
+  
+  
+  
+  
+  
 
   const dog = new Dog('Fido')
 
@@ -118,7 +118,7 @@ test('can extend another class', () => {
 })
 
 test('can use property setters and getters', () => {
-  // FINAL_START
+  
   class Animal {
     set name(name) {
       this._name = name
@@ -127,12 +127,12 @@ test('can use property setters and getters', () => {
       return `${this._name} type of animal`
     }
   }
-  // FINAL_END
-  // WORKSHOP_START
-  // Create an Animal class (don't pass name into constructor)
-  // Add property setter for name
-  // Add property getter for name
-  // WORKSHOP_END
+  
+  
+  
+  
+  
+  
 
   const animal = new Animal()
   animal.name = 'Dog'
@@ -144,16 +144,16 @@ test('can use property setters and getters', () => {
 
 
 /*
-http://ws.kcd.im/?ws=ES6+and+Beyond&e=Classes&em=
+http:
 */
 
 test('I submitted my elaboration and feedback', () => {
-  // WORKSHOP_START
-  const submitted = false // change this when you've submitted!
-  // WORKSHOP_END
-  // FINAL_START
+  
+  const submitted = false 
+  
+  
   const submitted = true
-  // FINAL_END
+  
   expect(true).toBe(submitted)
 })
 

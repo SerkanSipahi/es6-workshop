@@ -2,7 +2,7 @@ test('public class fields help us avoid .bind-ing everything', () => {
   class FakeReactComponent {
     constructor(props) {
       this.props = props
-      this.setState = () => {} // just for fun
+      this.setState = () => {} 
     }
   }
 
@@ -11,9 +11,9 @@ test('public class fields help us avoid .bind-ing everything', () => {
       this.props.onClick(value)
     }
     render() {
-      // weird JSX stuff here
+      
     }
-    // this is just so we can test things out
+    
     testClick(value) {
       const fakeEvent = {target: {value}}
       this.handleClick(fakeEvent)

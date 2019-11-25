@@ -1,8 +1,8 @@
 import log from './pretty-log'
 
 function shorthandPropertyNames() {
-  // refactor with shortening the object literal
-  // and removing reptition
+  
+  
   const red = Math.floor(Math.random() * 256)
   const green = Math.floor(Math.random() * 256)
   const blue = Math.floor(Math.random() * 256)
@@ -16,7 +16,7 @@ function shorthandPropertyNames() {
 
 
 function proto() {
-  // refactor using __proto__ :)
+  
   const parent = {
     parentProp: 'parent',
     overriddenProp: 'parent overridden?',
@@ -35,14 +35,14 @@ function proto() {
       writable: true,
     },
   })
-  // getAllPropsInObject returns an object with
-  // `inheritedProps` and `ownProps` objects.
+  
+  
   return getAllPropsInObject(child)
 }
 
 
 function methodShorthand() {
-  // refactor using method shorthand
+  
   const greeter = {
     sayHi: function sayHi(name) {
       return `Hi ${name}`
@@ -53,7 +53,7 @@ function methodShorthand() {
 
 
 function methodSuperCalls() {
-  // refactor fileTaxes on the child using method shorthand and use `super` instead
+  
   const parent = {
     doFilingOfTaxes() {
       return 'taxes filed'

@@ -2,23 +2,23 @@ import log from './pretty-log'
 
 function padString() {
   const string = 'hello'
-  // make string have padding on either side
-  const startPadded = string.watBeginning(2) // maybe?
-  const endPadded = startPadded.watEnding(2) // perhaps?
+  
+  const startPadded = string.watBeginning(2) 
+  const endPadded = startPadded.watEnding(2) 
   return endPadded === '  hello  '
 }
 
 
 function padStringWithPadString() {
   const string = 'hallo'
-  // make the padString be 'sup '
+  
   const result = string.padStart(17)
   return result
 }
 
 
 function objectValues() {
-  // what does this return?
+  
   const object = {
     a: 'a value',
     b: 'b value',
@@ -34,7 +34,7 @@ function objectValues() {
 
 
 function objectEntries() {
-  // what does this return?
+  
   const object = {
     a: 'a value',
     b: 'b value',
@@ -70,7 +70,7 @@ function padStringSOLUTION() {
 
 function padStringWithPadStringSOLUTION() {
   const string = 'hallo'
-  // make the padString be 'sup '
+  
   const result = string.padStart(17, 'sup ')
   return result
 }

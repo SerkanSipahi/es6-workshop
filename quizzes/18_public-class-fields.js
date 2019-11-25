@@ -1,8 +1,8 @@
 import log from './pretty-log'
 
 function basicExample() {
-  // can you find the bug in this code?
-  // how could we fix it?
+  
+  
   class Greeter {
     constructor(name, preference) {
       this.name = name

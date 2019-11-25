@@ -1,13 +1,13 @@
 test('String.prototype.padStart saves us from left-pad-gate', () => {
   const originalString = 'Worlds Finest'
-  // call padStart on this string to make the test pass
+  
   const result = originalString
   expect(result).toBe('    Worlds Finest')
 })
 
 test('String.prototype.padEnd (and padStart) can be given a string to pad with', () => {
   const originalString = 'Stronger Together'
-  // call padEnd on this string to make the test pass
+  
   expect(result).toBe('Stronger Together-123-123-1')
 })
 
@@ -25,7 +25,7 @@ test('Object.values gets just the values of an object', () => {
       'Alex Danvers',
     ],
   }
-  // get the values of the show object as an array
+  
   expect(result).toEqual([
     'Supergirl',
     1.2,
@@ -49,13 +49,13 @@ test('Object.entries gives an array of arrays as [key, value]', () => {
       'The Flash',
       'Iris West',
       'Caitlin Snow',
-      'Eddie Thawne', // 😢
+      'Eddie Thawne', 
       'Cisco Ramon',
       'Harrison Wells',
       'Joe West',
     ],
   }
-  // get a [key, value] array of the show object
+  
   expect(result).toEqual([
     ['title', 'The Flash'],
     ['seasons', 2.2],
@@ -75,8 +75,8 @@ test('Object.entries gives an array of arrays as [key, value]', () => {
 })
 
 test('Trailing commas in function parameter lists and calls help us with git', () => {
-  // becasue this is a syntax thing, we'll put it inside a string and use `eval` to make sure
-  // that you get the syntax correct :)
+  
+  
   expect(`
     function foo(
       a,
@@ -105,17 +105,17 @@ test('Trailing commas in function parameter lists and calls help us with git', (
     )
 
     function log() {
-      // do nothing :)
+      
     }
   `).toBeValidSyntax()
 })
 
 
 /*
-http://ws.kcd.im/?ws=ES6+and+Beyond&e=ES2017&em=
+http:
 */
 test('I submitted my elaboration and feedback', () => {
-  const submitted = false // change this when you've submitted!
+  const submitted = false 
   expect(true).toBe(submitted)
 })
 

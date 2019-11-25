@@ -45,10 +45,10 @@ test('can make array filter chains more managable', () => {
   ]
 
   const shoppingList = data
-    .filter(d => d.type != 'Widget') // Remove Widgets
-    .filter(d => d.price < 5) // Find only remaining items with price < 5
-    .sort((a, b) => a.qty - b.qty) // Sort by quantity, desc
-    .map(d => d.name) // Pull just the name from each item
+    .filter(d => d.type != 'Widget') 
+    .filter(d => d.price < 5) 
+    .sort((a, b) => a.qty - b.qty) 
+    .map(d => d.name) 
 
   expect(shoppingList.shift()).toBe('Bacon')
   expect(shoppingList.shift()).toBe('JT Best Hits')

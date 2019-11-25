@@ -88,8 +88,8 @@ test('is an actual array, unlike arguments', () => {
 })
 
 test('it can default all arguments, optionally', () => {
-  // Modify the method signature of `myFunction` to allow for
-  // all args to be optional
+  
+  
 
   function myFunction({name, age, favoriteBand}) {
     expect(name).toBeDefined()
@@ -106,10 +106,10 @@ test('it can default all arguments, optionally', () => {
 
 
 /*
-http://ws.kcd.im/?ws=ES6+and+Beyond&e=Parameters&em=
+http:
 */
 test('I submitted my elaboration and feedback', () => {
-  const submitted = false // change this when you've submitted!
+  const submitted = false 
   expect(true).toBe(submitted)
 })
 

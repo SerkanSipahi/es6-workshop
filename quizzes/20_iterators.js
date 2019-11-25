@@ -1,10 +1,10 @@
 import log from './pretty-log'
 
 function gettingAnIterator() {
-  // what does this return?
+  
   const array = [1, 2, 3]
   const iterator = array[Symbol.iterator]()
-  // hint, first is {value: 1, done: false}
+  
   const first = iterator.next()
   const second = iterator.next()
   const third = iterator.next()
@@ -15,8 +15,8 @@ function gettingAnIterator() {
 
 
 function builtInIterables() {
-  // what does this return?
-  // which of these things is iterable?
+  
+  
   return {
     array: isIterable([]),
     boolean: isIterable(true),
@@ -108,9 +108,9 @@ function customIteratorWithArguments() {
       }
     },
   }
-  // how can I make the iterator accept an argument
-  // and pass along that argument
-  // goal: only get the items that include the letter `e`
+  
+  
+  
   return [...cars]
 }
 

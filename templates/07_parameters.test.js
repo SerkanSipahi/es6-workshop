@@ -3,18 +3,18 @@ test('can be triggered when the incoming argument is undefined', () => {
     return name
   }
 
-  // FINAL_START
+  
   expect(getName('Aaron')).toBe('Aaron')
   expect(getName()).toBe('Mercury')
   expect(getName(undefined)).toBe('Mercury')
   expect(getName(null)).toBe(null)
-  // FINAL_END
-  // WORKSHOP_START
+  
+  
   expect(getName('Aaron')).toBe(/*ENTER YOUR GUESS HERE*/)
   expect(getName(undefined)).toBe(/*ENTER YOUR GUESS HERE*/)
   expect(getName(null)).toBe(/*ENTER YOUR GUESS HERE*/)
   expect(getName()).toBe(/*ENTER YOUR GUESS HERE*/)
-  // WORKSHOP_END
+  
 })
 
 test(`aren't included in arguments`, () => {
@@ -22,16 +22,16 @@ test(`aren't included in arguments`, () => {
     return arguments.length
   }
 
-  // FINAL_START
+  
   expect(getName('Aaron')).toBe(1)
   expect(getName(null)).toBe(1)
   expect(getName()).toBe(0)
-  // FINAL_END
-  // WORKSHOP_START
+  
+  
   expect(getName('Aaron')).toBe(/*ENTER YOUR GUESS HERE*/)
   expect(getName(null)).toBe(/*ENTER YOUR GUESS HERE*/)
   expect(getName()).toBe(/*ENTER YOUR GUESS HERE*/)
-  // WORKSHOP_END
+  
 })
 
 test('can trigger a function call', () => {
@@ -46,20 +46,20 @@ test('can trigger a function call', () => {
     return 'Mercury'
   }
 
-  // FINAL_START
+  
   expect(triggerCount).toBe(0)
   expect(getName('Aaron')).toBe('Aaron')
   expect(getName()).toBe('Mercury')
   expect(getName(undefined)).toBe('Mercury')
   expect(triggerCount).toBe(2)
-  // FINAL_END
-  // WORKSHOP_START
+  
+  
   expect(triggerCount).toBe(/*ENTER YOUR GUESS HERE*/)
   expect(getName('Aaron')).toBe(/*ENTER YOUR GUESS HERE*/)
   expect(getName()).toBe(/*ENTER YOUR GUESS HERE*/)
   expect(getName(undefined)).toBe(/*ENTER YOUR GUESS HERE*/)
   expect(triggerCount).toBe(/*ENTER YOUR GUESS HERE*/)
-  // WORKSHOP_END
+  
 })
 
 test('catch non-specified params', () => {
@@ -67,7 +67,7 @@ test('catch non-specified params', () => {
     return others
   }
 
-  // FINAL_START
+  
   expect(resty().length).toBe(0)
   expect(resty(1).length).toBe(0)
   expect(resty(1, 2).length).toBe(0)
@@ -76,8 +76,8 @@ test('catch non-specified params', () => {
     resty(1, 2, 3, undefined, 5, undefined, 7, undefined, 9, 10).length,
   ).toBe(8)
 
-  // FINAL_END
-  // WORKSHOP_START
+  
+  
   expect(resty().length).toBe(/*ENTER YOUR GUESS HERE*/)
   expect(resty(1).length).toBe(/*ENTER YOUR GUESS HERE*/)
   expect(resty(1, 2).length).toBe(/*ENTER YOUR GUESS HERE*/)
@@ -85,7 +85,7 @@ test('catch non-specified params', () => {
   expect(
     resty(1, 2, 3, undefined, 5, undefined, 7, undefined, 9, 10).length,
   ).toBe(/*ENTER YOUR GUESS HERE*/)
-  // WORKSHOP_END
+  
 })
 
 test('has a different length than `arguments`', () => {
@@ -93,7 +93,7 @@ test('has a different length than `arguments`', () => {
     return others.length === arguments.length
   }
 
-  // FINAL_START
+  
   expect(resty()).toBe(true)
   expect(resty(1)).toBe(false)
   expect(resty(1, 2)).toBe(false)
@@ -101,8 +101,8 @@ test('has a different length than `arguments`', () => {
   expect(resty(1, 2, 3, undefined, 5, undefined, 7, undefined, 9, 10)).toBe(
     false,
   )
-  // FINAL_END
-  // WORKSHOP_START
+  
+  
   expect(resty()).toBe(/*ENTER YOUR GUESS HERE*/)
   expect(resty(1)).toBe(/*ENTER YOUR GUESS HERE*/)
   expect(resty(1, 2)).toBe(/*ENTER YOUR GUESS HERE*/)
@@ -110,7 +110,7 @@ test('has a different length than `arguments`', () => {
   expect(
     resty(1, 2, 3, undefined, 5, undefined, 7, undefined, 9, 10),
   ).toBe(/*ENTER YOUR GUESS HERE*/)
-  // WORKSHOP_END
+  
 })
 
 test('is an actual array, unlike arguments', () => {
@@ -125,7 +125,7 @@ test('is an actual array, unlike arguments', () => {
   const args = argy(1, 2, 3)
   const rests = resty(1, 2, 3)
 
-  // FINAL_START
+  
   expect(Object.getPrototypeOf(args) === Object.getPrototypeOf(rests)).toBe(
     false,
   )
@@ -133,8 +133,8 @@ test('is an actual array, unlike arguments', () => {
   expect(Object.getPrototypeOf(rests)).toBe(Array.prototype)
   expect(rests.splice).toBeDefined()
   expect(rests.splice).toBe(Array.prototype.splice)
-  // FINAL_END
-  // WORKSHOP_START
+  
+  
   expect(
     Object.getPrototypeOf(args) === Object.getPrototypeOf(rests),
   ).toBe(/*ENTER YOUR GUESS HERE*/)
@@ -142,24 +142,24 @@ test('is an actual array, unlike arguments', () => {
   expect(Object.getPrototypeOf(rests)).toBe(/*ENTER YOUR GUESS HERE*/)
   expect(rests.splice).toBeDefined()
   expect(rests.splice).toBe(Array.prototype.splice)
-  // WORKSHOP_END
+  
 })
 
 test('it can default all arguments, optionally', () => {
-  // WORKSHOP_START
-  // Modify the method signature of `myFunction` to allow for
-  // all args to be optional
-  // WORKSHOP_END
+  
+  
+  
+  
 
-  // FINAL_START
+  
   function myFunction({name = 'Aaron', age = 35, favoriteBand = 'Queen'} = {}) {
-    // FINAL_END
-    // COMMENT_START make the parser happy :)
+    
+    
   }
-  // COMMENT_END
-  // WORKSHOP_START
+  
+  
   function myFunction({name, age, favoriteBand}) {
-    // WORKSHOP_END
+    
     expect(name).toBeDefined()
     expect(age).toBeDefined()
     expect(favoriteBand).toBeDefined()
@@ -175,16 +175,16 @@ test('it can default all arguments, optionally', () => {
 
 
 /*
-http://ws.kcd.im/?ws=ES6+and+Beyond&e=Parameters&em=
+http:
 */
 
 test('I submitted my elaboration and feedback', () => {
-  // WORKSHOP_START
-  const submitted = false // change this when you've submitted!
-  // WORKSHOP_END
-  // FINAL_START
+  
+  const submitted = false 
+  
+  
   const submitted = true
-  // FINAL_END
+  
   expect(true).toBe(submitted)
 })
 

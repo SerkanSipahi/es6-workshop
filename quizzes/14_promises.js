@@ -2,36 +2,36 @@
 
 
 function callbacks() {
-  // refactor to promises
+  
 
-  // successful
+  
   logResult(cb => {
     timeout(100, false, (error, result) => {
-      // ignore handle error
+      
       cb(null, `success: ${result}`)
     })
   })
 
-  // failing
+  
   logResult(cb => {
     timeout(100, true, (error, result) => {
       cb(`failure: ${error}`)
-      // ignore success
+      
     })
   })
 
-  // error recovery
+  
   logResult(cb => {
     timeout(200, true, (error, result) => {
       if (error) {
-        // recoving from an error
+        
         return cb(null, `Recovered from error: ${error}`)
       }
       cb(null, `${result} with stuff`)
     })
   })
 
-  // wild example...
+  
   logResult(cb => {
     timeout(100, false, (error1, result1) => {
       if (error1) {
@@ -55,7 +55,7 @@ function callbacks() {
       let errored = false
       return function callback(error, result) {
         if (error) {
-          // TODO: handle this...
+          
           finalCallback(error)
           errored = true
         }

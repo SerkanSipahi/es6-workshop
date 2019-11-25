@@ -29,8 +29,8 @@ test(`can be iterated over`, () => {
 
   let sum = 0
 
-  // BEWARE, THIS IS BLOCKING/SYNCHRONOUS!
-  // Generators are not async/await, those may be in ES2016
+  
+  
   for (let even of giveMeOneEvenNumber()) {
     sum = sum + even
   }

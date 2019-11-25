@@ -1,5 +1,5 @@
 function weakMapInfo() {
-  // what will this return?
+  
   const obj = {iHaveYouNow: true}
   const weakMap = new WeakMap([
     [{iDoNotHaveYouEver: true}, true],

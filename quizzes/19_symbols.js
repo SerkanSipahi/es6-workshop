@@ -7,15 +7,15 @@ function createSymbol() {
 
 
 function symbolDescription() {
-  // how would we give this symbol an identifier
-  // for debugging purposes?
+  
+  
   const mySymbol = Symbol()
   return mySymbol
 }
 
 
 function getSymbolsFromObject() {
-  // what will this return?
+  
   const secret = Symbol('not so secret')
   const object = {
     noSecrets: 'I have nothing to hide',
@@ -37,15 +37,15 @@ function createSymbolSOLUTION() {
 
 
 function symbolDescriptionSOLUTION() {
-  // how would we give this symbol an identifier
-  // for debugging purposes?
+  
+  
   const mySymbol = Symbol('My description')
   return mySymbol
 }
 
 
 function getSymbolsFromObjectSOLUTION() {
-  // what will this return?
+  
   const secret = Symbol('not so secret')
   const object = {
     noSecrets: 'I have nothing to hide',

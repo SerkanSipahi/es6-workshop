@@ -1,5 +1,5 @@
 test('the exponentiation operation can be used to raise a number to a power of another number', () => {
-  // refactor this to use the exponentiation operator (**)
+  
   const result = Math.pow(3, 2)
   expect(result).toBe(9)
 })
@@ -12,17 +12,17 @@ test('array.includes can be used to determine whether an item exists in an array
     {name: 'Sam Saccone'},
     {name: 'Ingvar Stepanyan'},
   ]
-  // refactor this to use `includes` instead
+  
   const result = greatFriends.indexOf(bestFriend) !== -1
   expect(result).toBe(true)
 })
 
 
 /*
-http://ws.kcd.im/?ws=ES6+and+Beyond&e=ES2016&em=
+http:
 */
 test('I submitted my elaboration and feedback', () => {
-  const submitted = false // change this when you've submitted!
+  const submitted = false 
   expect(true).toBe(submitted)
 })
 

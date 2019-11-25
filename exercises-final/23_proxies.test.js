@@ -24,8 +24,8 @@ test('can wrap an existing object', () => {
   const character = getCharacter()
   const handler = {}
   const proxy = new Proxy(character, handler)
-  expect(proxy).not.toBe(character) // referential equality
-  expect(proxy).toEqual(character) // deep equality
+  expect(proxy).not.toBe(character) 
+  expect(proxy).toEqual(character) 
 })
 
 test('handler can intercept gets, sets, and deletes', () => {
@@ -45,26 +45,26 @@ test('handler can intercept gets, sets, and deletes', () => {
     },
     deleteProperty(target, name) {
       if (name.startsWith('_')) {
-        return true // must return `true` to indicate that things are OK
+        return true 
       }
       return Reflect.deleteProperty(target, name)
     },
   }
   const proxy = new Proxy(character, handler)
 
-  // interact with the proxy
-  proxy['classes.1.teacher'] = 'Severus Snape' // set deep
-  proxy.awesome = 10 // set shallow
-  delete proxy._id // delete "protected property"
+  
+  proxy['classes.1.teacher'] = 'Severus Snape' 
+  proxy.awesome = 10 
+  delete proxy._id 
 
-  // make some assertions
-  expect(proxy['classes.1.teacher']).toBe('Severus Snape') // get deep
-  expect(proxy.awesome).toBe(10) // get shallow
-  expect(proxy._id).toEqual('9RKDLS02580GHCXNZLA0') // property not deleted
+  
+  expect(proxy['classes.1.teacher']).toBe('Severus Snape') 
+  expect(proxy.awesome).toBe(10) 
+  expect(proxy._id).toEqual('9RKDLS02580GHCXNZLA0') 
 
-  // clean up
-  delete proxy.awesome // delete unprotected property
-  expect(proxy.awesome).toBe(undefined) // property successfully deleted
+  
+  delete proxy.awesome 
+  expect(proxy.awesome).toBe(undefined) 
 })
 
 
@@ -84,7 +84,7 @@ test.skip('can intercept function calls', () => {
       return result
     },
   }
-  // notice that `apply` only works for proxies on functions!
+  
   character.greet = new Proxy(character.greet, handler)
   character.getTeachers = new Proxy(character.getTeachers, handler)
   const result = character.greet('Hey there')

@@ -1,14 +1,14 @@
 import log from './pretty-log'
 
 function getAverage() {
-  // refactor with object destructuring
+  
   const obj = {x: 3.6, y: 7.8, z: 4.3}
   return Math.floor((obj.x + obj.y + obj.z) / 3.0)
 }
 
 
 function getAvgTemp() {
-  // refactor with nested destructuring
+  
   const weather = {
     location: 'Toronto',
     unit: 'Celsius',
@@ -30,7 +30,7 @@ function getAvgTemp() {
 
 
 function getFirstTwo() {
-  // refactor with array destructuring
+  
   const arr = [0, 1, 2, 3, 4, 5, 6, 7]
   const firstItem = arr[0]
   const secondItem = arr[1]
@@ -43,8 +43,8 @@ function getFirstTwo() {
 
 
 function getElements() {
-  // returns 1st, 2nd and last element from an array
-  // refactor with skipped destructuring for arrays
+  
+  
   const arr = [0, 1, 2, 3, 4, 5, 6, 7]
   const first = arr[0]
   const second = arr[1]
@@ -59,7 +59,7 @@ function getElements() {
 
 
 function getSecondItem() {
-  // refactor with nested destructuring of arrays
+  
   const food = [
     ['carrots', 'beans', 'peas', 'lettuce'],
     ['apple', 'mango', 'orange'],
@@ -78,7 +78,7 @@ function getSecondItem() {
 
 
 function nestedArrayAndObject() {
-  // refactor this to a single line of destructuring...
+  
   const info = {
     title: 'Once Upon a Time',
     protagonist: {
@@ -112,7 +112,7 @@ function defaultValues() {
 
 
 function ontoAnObject() {
-  // refactor this to destructuring
+  
   const array = [1, 2, 3, 4, 5, 6]
   const object = {}
   object.one = array[0]
@@ -247,7 +247,7 @@ function defaultValuesSOLUTION() {
 
 function ontoAnObjectSOLUTION() {
   const array = [1, 2, 3, 4, 5, 6]
-  const object = {} // <-- one place a semicolon is required
+  const object = {} 
   ;[object.one, object.two, object.three, ...object.rest] = array
   return object
 }

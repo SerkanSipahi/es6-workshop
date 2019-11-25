@@ -24,7 +24,7 @@ test('cannot modify the value of a `const` variable', () => {
 
 test('is trapped inside of an `if` statement', () => {
   if (true) {
-    // Change to `var` to `let`, so that b is scoped inside of the if-statement
+    
     let b = 1
   }
   expect(() => noop(b)).toThrow('b is not defined')
@@ -42,7 +42,7 @@ test(`can't redeclare using the same name`, () => {
 })
 
 test('means that we can start using block statements', () => {
-  // BLOCK STATEMENT
+  
   {
     const d = 2
   }
@@ -61,7 +61,7 @@ test('I submitted my elaboration and feedback', () => {
 
 test.skip('means that we can declare constant with the same name in block statement', () => {
   const d = 5
-  // BLOCK STATEMENT
+  
   {
     const d = 10
     expect(d).toBe(10)

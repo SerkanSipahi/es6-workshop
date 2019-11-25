@@ -1,6 +1,6 @@
 test('has a set method', () => {
-  // Create a new map called 'myMap'
-  // add a new entry. Use 'name' as the key and 'Aaron' as the value
+  
+  
 
   expect(myMap.get('name')).toBe('Aaron')
 })
@@ -9,8 +9,8 @@ test('can use objects as a key', () => {
   const user = {name: 'Aaron'}
   const value = {twitter: '@js_dev', gplus: '+AaronFrost'}
 
-  // Create a map called 'myMap'
-  // add a new entry. Use user as the key, and value as the value
+  
+  
 
   expect(myMap.has(user)).toBe(true)
   expect(myMap.get(user)).toBe(value)
@@ -26,10 +26,10 @@ test(`doesn't coerce keys`, () => {
 
 
 /*
-http://ws.kcd.im/?ws=ES6+and+Beyond&e=Maps&em=
+http:
 */
 test('I submitted my elaboration and feedback', () => {
-  const submitted = false // change this when you've submitted!
+  const submitted = false 
   expect(true).toBe(submitted)
 })
 

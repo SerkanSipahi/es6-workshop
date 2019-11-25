@@ -6,7 +6,7 @@ test('Reflect.apply can be used to call a function', () => {
     },
   }
 
-  const result = null // use Reflect.apply to invoke person.sayHi
+  const result = null 
   expect(result).toBe('Hey there Jaimee! My name is Fred')
 })
 
@@ -16,7 +16,7 @@ test('Reflect.deleteProperty can be used instead of the `delete` keyword', () =>
     configurable: false,
     value: 'YOU CANNOT GET RID OF ME!',
   })
-  // use Reflect.deleteProperty to delete the age property from the person object
+  
   const ageDeleted = delete person.age
   const protectedDeleted = delete person.protected
   expect(person.age).not.toBeDefined()
@@ -39,9 +39,9 @@ test(`Reflect.ownKeys returns the object's own (not inherited) keys (including s
     configurable: false,
     enumerable: false,
   })
-  // hint, the keys will be in the order that they're added to the object
-  // this will be the case for most environments, though it's generally not
-  // a good idea to rely on this fact as it's not specified in the spec.
+  
+  
+  
   expect(Object.keys(kyle)).toEqual([
     /* ENTER YOUR GUESS */
   ])
@@ -58,10 +58,10 @@ test(`Reflect.ownKeys returns the object's own (not inherited) keys (including s
 
 
 /*
-http://ws.kcd.im/?ws=ES6+and+Beyond&e=Reflect&em=
+http:
 */
 test('I submitted my elaboration and feedback', () => {
-  const submitted = false // change this when you've submitted!
+  const submitted = false 
   expect(true).toBe(submitted)
 })
 

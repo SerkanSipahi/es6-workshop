@@ -1,7 +1,7 @@
 import log from './pretty-log'
 
 function multiArgument() {
-  // refactor to an arrow function
+  
   const divide = function(a, b) {
     return a / b
   }
@@ -10,7 +10,7 @@ function multiArgument() {
 
 
 function noArgument() {
-  // refactor to an arrow function
+  
   const getFive = function() {
     return 5
   }
@@ -19,7 +19,7 @@ function noArgument() {
 
 
 function singleArgument() {
-  // refactor to an arrow function
+  
   const identity = function(i) {
     return i
   }
@@ -28,7 +28,7 @@ function singleArgument() {
 
 
 function spreadWithArrow() {
-  // refactor to an arrow function
+  
   const asArray = function(...args) {
     return args
   }
@@ -37,7 +37,7 @@ function spreadWithArrow() {
 
 
 function withStatements() {
-  // refactor to an arrow function
+  
   const tryInvoke = function(obj, fn, ...args) {
     try {
       return obj[fn](...args)
@@ -50,7 +50,7 @@ function withStatements() {
 
 
 function withObject() {
-  // refactor to an arrow function
+  
   const getObject = function(favoriteCandy) {
     return {favoriteCandy}
   }
@@ -70,7 +70,7 @@ function withMultiLineExpression() {
 
 
 function curryAdd() {
-  // refactor to a arrow functions
+  
   return curryAddition(9)(3)(5)
 
   function curryAddition(a) {
@@ -92,10 +92,10 @@ function context() {
       {city: 'New Delhi', value: 24.953},
     ],
     display() {
-      // TODO: refactor with arrow function
+      
       return this.data.map(function populationStringMapper(element) {
         return `Population in ${element.city} is ${element.value} ${this.unit}`
-      }, this) // passing `this` as second argument to bind properly
+      }, this) 
     },
   }
   return population.display()
@@ -103,7 +103,7 @@ function context() {
 
 
 function noBind() {
-  // what will this function return?
+  
   const user = {
     id: 42,
     getIdGetter() {
@@ -155,7 +155,7 @@ function singleArgumentSOLUTION() {
 
 
 function spreadWithArrowSOLUTION() {
-  // refactor to an arrow function
+  
   const asArray = (...args) => args
   return asArray(1, 2, 3, 4)
 }
@@ -174,7 +174,7 @@ function withStatementsSOLUTION() {
 
 
 function withObjectSOLUTION() {
-  // refactor to an arrow function
+  
   const getObject = favoriteCandy => ({favoriteCandy})
   return getObject('twix')
 }

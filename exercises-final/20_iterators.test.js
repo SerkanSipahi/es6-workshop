@@ -5,7 +5,7 @@ test('can get the iterator from an array', () => {
 })
 
 test('can next() the iterator multiple times', () => {
-  const string = 'hello' // <-- YES, this is iterable!
+  const string = 'hello' 
   const iterator = string[Symbol.iterator]()
   expect(iterator.next()).toEqual({value: 'h', done: false})
   expect(iterator.next()).toEqual({value: 'e', done: false})
@@ -99,9 +99,9 @@ test('I submitted my elaboration and feedback', () => {
 
 
 test.skip('add custom iterator to built-in types', () => {
-  // got this trick from getify's "ES6, the best parts"
-  // on frontend masters. Pretty neat! (though, I wouldn't
-  // recommend actually doing it...)
+  
+  
+  
   Number.prototype[Symbol.iterator] = function* numberIterator() {
     for (let i = 0; i < this; i++) {
       yield i

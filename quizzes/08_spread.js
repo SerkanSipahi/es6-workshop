@@ -1,18 +1,18 @@
 import log from './pretty-log'
 
 function spreadFunctionCall() {
-  // TODO: return the maximum value in an array of integers
-  // use spread operator and Math.max() in refactoring
+  
+  
   const arr = [5, 6, 8, 4, 9]
   return Math.max.apply(null, arr)
 }
 
 
 function concatArrays() {
-  // TODO: flatten nested arrays of arbitrary levels of nesting
-  // arr can be typically like this: [8, 9, [6, [5, [7], [45, 34, [2]]]]]
-  // output shold be [8, 9, 6, 5, 7, 45, 34, 2]
-  // use spread operator in place of Array.prototype.concat()
+  
+  
+  
+  
   const arr = [8, 9, [6, [5, [7], [45, 34, [[[2]]], [[[[[[[[7]]]]], 90]]]]]]]
   return flatter(arr)
 
@@ -28,7 +28,7 @@ function concatArrays() {
 
 
 function mergeObjects() {
-  // refactor to object spread
+  
   const obj1 = {
     a: 'a from obj1',
     b: 'b from obj1',
@@ -60,7 +60,7 @@ function spreadString() {
 
 
 function restString() {
-  // what does this return?
+  
   const greeting = 'Hello world'
   const [h, e, l, l2, o, space, ...splitGreeting] = greeting
   return splitGreeting

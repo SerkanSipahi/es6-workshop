@@ -1,5 +1,5 @@
 function basicSet() {
-  // What do you think this will return?
+  
   const set = new Set()
   set.add(1)
   set.add(2)
@@ -9,7 +9,7 @@ function basicSet() {
 
 
 function unique() {
-  // What do you think this will return?
+  
   const obj = {a: 45, b: 50}
   const s = new Set()
   s.add(obj)
@@ -20,8 +20,8 @@ function unique() {
 
 function initializeSet() {
   const arr = [1, 5, 7, 2, 9, 4]
-  // TODO: change the following line
-  // so that the Set t has array's contents
+  
+  
   const set = new Set()
   return set
 }
@@ -30,10 +30,10 @@ function initializeSet() {
 function setInfo() {
   const obj = {a: 42}
   const set = new Set([1, 2, obj, 3, 4])
-  // how do you get the size of the set?
-  // how can you determine whether the set has a value?
+  
+  
   return {
-    // fill these values in...
+    
     size: set.length,
     hasObj: set.indexOf(obj) !== -1,
     hasFive: set.indexOf(5) !== -1,
@@ -43,12 +43,12 @@ function setInfo() {
 
 
 function removeDuplicates() {
-  // given an array
-  // we have to remove duplicate entries
+  
+  
   const arr = [6, 8, 3, 9, 6, 5, 8, 2, 3, 9, 7, 7, 2, 1, 0, 8]
 
-  // TODO: use a Set to do this
-  // refactor the following
+  
+  
   const uniqueArr = arr.filter((elem, index) => arr.indexOf(elem) === index)
 
   return uniqueArr
@@ -64,7 +64,7 @@ function iterateSets() {
 
 
 function spreadSets() {
-  // what does this return?
+  
   const set = new Set([1, 2, 3, 4])
   const array = [...set]
   return array
@@ -72,7 +72,7 @@ function spreadSets() {
 
 
 function restSet() {
-  // what does this return?
+  
   const set = new Set([1, 2, 3, 4])
   const [first, second, ...rest] = set
   return rest
@@ -103,12 +103,12 @@ function setInfoSOLUTION() {
 
 
 function removeDuplicatesSOLUTION() {
-  // given an array
-  // we have to remove duplicate entries
+  
+  
   const arr = [6, 8, 3, 9, 6, 5, 8, 2, 3, 9, 7, 7, 2, 1, 0, 8]
 
-  // TODO: use a Set to do this
-  // refactor the following
+  
+  
   const set = new Set(arr)
   const uniqueArr = Array.from(set)
   return uniqueArr

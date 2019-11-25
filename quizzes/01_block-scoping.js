@@ -1,7 +1,7 @@
 import log from './pretty-log'
 
 function basic() {
-  // what is returned?
+  
   let x = 100
   const y = 200
   return {x: x, y: y}
@@ -9,7 +9,7 @@ function basic() {
 
 
 function immutable() {
-  // what is returned?
+  
   const object = {a: 'b'}
   const array = [1, 2, 3, 4]
 
@@ -20,15 +20,15 @@ function immutable() {
 
 
 function immutableReference() {
-  // what is returned?
+  
   const object = {a: 'b'}
-  // object = {a: 'q'}
+  
   return object
 }
 
 
 function ifBlock() {
-  // what is returned?
+  
   if (3 > 1) {
     const x = 34
     let y = 43
@@ -38,9 +38,9 @@ function ifBlock() {
 
 
 function block() {
-  // what is returned?
+  
   {
-    // this is called a "block" ✨
+    
     const x = 42
     let y = 24
   }
@@ -49,7 +49,7 @@ function block() {
 
 
 function scoped() {
-  // what is returned?
+  
   let x = 33
   {
     const x = 123
@@ -59,14 +59,14 @@ function scoped() {
 
 
 function veryScoped() {
-  // what is returned?
+  
   let x = 23
   {
     let x
     {
       x = 55
     }
-    // let x = 45 // if this weren't commented out, this file would fail parsing
+    
   }
   return x
 }
@@ -85,7 +85,7 @@ function temporalDeadZone() {
 
 
 function semiPractical() {
-  // what is returned from this function?
+  
   const myThings = ['thing1', 'thing2', 'red fish', 'blue fish']
   const callbacks = []
   for (var i = 0; i < myThings.length; i++) {
@@ -118,7 +118,7 @@ SOLUTIONS ARE BELOW
  */
 
 function immutableReferenceSOLUTION() {
-  // what is returned?
+  
   let object = {a: 'b'}
   object = {a: 'q'}
   return object

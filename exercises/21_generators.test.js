@@ -27,8 +27,8 @@ test(`can be iterated over`, () => {
 
   let sum = 0
 
-  // BEWARE, THIS IS BLOCKING/SYNCHRONOUS!
-  // Generators are not async/await, those may be in ES2016
+  
+  
   for (let even of giveMeOneEvenNumber()) {
     sum = sum + even
   }
@@ -38,10 +38,10 @@ test(`can be iterated over`, () => {
 
 
 /*
-http://ws.kcd.im/?ws=ES6+and+Beyond&e=Generators&em=
+http:
 */
 test('I submitted my elaboration and feedback', () => {
-  const submitted = false // change this when you've submitted!
+  const submitted = false 
   expect(true).toBe(submitted)
 })
 
